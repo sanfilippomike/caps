@@ -31,7 +31,8 @@ end
 gem "therubyracer"
 gem "less-rails"
 gem 'jquery-rails'
-
+gem "searchkick"
+gem 'font-awesome-rails', '~> 4.1.0.0'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

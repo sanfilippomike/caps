@@ -1,0 +1,108 @@
+<%= provide(:title, 'Patient Rights') %>
+<!-- Custom styles for this template -->
+
+<script src="../assets/init.js"></script>
+
+<style>
+#area1{
+background: url('../assets/flowers.jpg'); 50% 0 fixed; 
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: -100px 0;
+}
+
+
+.area2 h2, .area2 p{
+  color:#000000;
+}
+
+
+#area3{
+background: url('../assets/tree.jpg');50% 0 fixed; 
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+
+  .area3 .span8 {
+    margin-right: 40px;
+    margin-left: 40px;
+    }
+
+.muted{font-size:30px;font-weight:600;letter-spacing:2px;text-transform:uppercase;  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;color:#03ae6f}
+h2 {color:#FFFFFF;
+}
+p {color:#FFFFFF;}
+</style>
+
+
+
+<div class="area2">
+      <div class="featurette">
+        <img class="featurette-image">
+        <div class="span12">
+        <h2 class="featurette-heading"> <span class="muted">Patient Rights & Responsibilities</span></h2>
+        <p class="lead">
+        The staff at the Student Health Center is pleased to work with you to keep you in optimal health. We would like your visits with our staff to be valuable, whether they are to learn about and maintain your health or to help you recover from illness or injury. We encourage you to take an active role in managing your health. We can work together most effectively if you understand what to expect from us and what we expect from you.
+        <br><br>
+        <b>It is your right to:</b>
+        <br>
+        • Receive considerate and respectful care
+        <br>
+        • Receive complete, current, and clear information about your diagnosis, treatment and prognosis.
+        <br>
+        • Give informed consent prior to the start of any procedure and/or treatment 
+        <br>
+        • Know about any <a><%= link_to "fees for service", payments_path %></a>
+        <br>
+        • Refuse treatment to the extent provided by law
+        <br>
+        • <a><%= link_to "Confidentiality", confidentiality_path %></a> as prescribed by law
+        <br>
+        • Consent or refuse to participate in reaserch projects affecting your care
+        <br>
+        • Change primary or specialty <a><%= link_to "health care providers", meetthestaff_path %></a>, if available
+        <br>
+        • Know the appropriate channels for expressing comments and grievances about services
+        <br><br>
+
+        <b> It is your responsibility to:</b>
+        <br>
+        • Show respect for staff and other patients
+        <br>
+        • Provide information needed to assure proper evaluation and care
+        <br>
+        • Ask questions about your care
+        <br>
+        • Understand the prescribed treatment
+        <br>
+        • Take an active role in your health through <a><%= link_to "health education", healthpromotion_path %></a> materials and programs
+        <br>
+        • Particiapte fully in your health care
+        <br>
+        • Provide us with <a href="mailto:health@ucmerced.edu">feedback</a> for improving our services
+        <br><br>
+        Below you may read and print a summary of your rights and responsibilities as a user of health services.
+        <br><br>
+        <a href="/healthbrochure.pdf" target="_blank"> Patient Rights & Responsibilities (PDF) </a>
+        <br><br>
+        <b> Related forms and information: </b>
+        <br><br>
+        <a href="/minorconsent.pdf" target="_blank"> Consent for Medical Treatment </a>- for any student under 18 years of age seeking health care. Have a parent/guardian sign it, and fax it to our Medical Records Department at (209) 228-7650. If you have questions, call (209) 228-2273.
+        <br><br>
+        <a href="http://www2.ed.gov/policy/gen/guid/fpco/ferpa/students.html" target="_blank"> FERPA Guidelines</a> - General overview of FERPA.
+   </div>
+   </div>
+   </div>

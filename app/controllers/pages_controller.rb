@@ -25,4 +25,8 @@ class PagesController < ApplicationController
     @title = "Parents"
   end
 
+  def payments
+    @title = "Payments"
+  end
+
 end

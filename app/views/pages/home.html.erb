@@ -1,79 +1,275 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../assets/jquery-1.7.2.min.js"><\/script>')</script>
+<style>
 
+h1 {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.lead p {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 3000
-    })
-  });
-</script>
+.webstroke p{
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
 
+.fa-check-circle {
+    color: green;
+}
 
+</style>
+
+        <div class="row">
+                <div class="col-lg-8">
 <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- class of slide for animation -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+
+<div class="webstroke">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="../assets/firstc.jpg" alt= "First slide">
+          <img class='img-responsive' sizes="(min-width: 40em) 80vw, 100vw"
+          srcset="../assets/caro1-480.jpg 480w, ../assets/caro1-768.jpg 768w, ../assets/caro1-1500.jpg 1000w">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Our Mission</h1>
-              <p class="lead">Our goal is to help each student strive for maximum physical and emotional health while pursuing their academic and personal goals at the University.</p>
+              <h1>Our Mission:</h1>
+              <div class = largerfont>
+              <p class="lead"><h1>
+              Counseling Services exists to support the academic pursuit of UC Merced students by providing professional services that care for the emotional, personal, and social wellbeing of students. 
+              </h1>
+              </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="../assets/secondc.jpg"  alt="Second slide">
+          <img class='img-responsive' sizes="(min-width: 40em) 80vw, 100vw"
+          srcset="../assets/caro2-480.jpg 480w, ../assets/caro2-768.jpg 768w, ../assets/caro2-1500.jpg 1000w">
           <div class="container">
             <div class="carousel-caption">
-               <h1>Have you scheduled your checkup?</h1>
-              <p class="lead">It's the flu season. Don't miss critical academic hours, protect yourself with a flu shot!</p>
-              <a class="btn btn-large btn-primary" href="#">Book Appointment</a>
+               <h1>Diversity Statement:</h1>
+              <p class="lead"><h1>
+              Our ultimate goal is to provide a safe, supportive, inclusive and affirming environment for each and every UC Merced student.
+              </h1></p>
+              <a class="btn btn-large btn-primary" href="/appointments">Book Appointment</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="../assets/thirdc.jpg" alt="Third slide">
+          <img class='img-responsive' sizes="(min-width: 40em) 80vw, 100vw"
+          srcset="../assets/canal-480.jpg 480w, ../assets/canal-768.jpg 768w, ../assets/canal-1500.jpg 1000w">
           <div class="container">
             <div class="carousel-caption">
               <h1>Visit Us</h1>
-              <p class="lead">H. Rajender Reddy Health Center University of California, Merced 5200 North Lake Road Merced, CA 95343 Telephone: 209 228-2273 FAX: 209 228-7650</p>
+              <p class="lead"><h1>
+              Counseling and Psychological Services
+              <br>
+              5200 North Lake Road
+              <br>
+              Merced, CA 95343
+              <br>
+              Phone: (209)228-4266
+              <br>
+              Fax: (209)228-2270
+              </h1>
+              </p>
             </div>
           </div>
         </div>
       </div>
+  </div> <!--end textStroke-->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
 
 
+    <div class="panel panel-default">
+        <div class="panel-heading">
+         <h3>   <i class="fa fa-star-o fa-fw"></i> <b> Our Mission </b> </h3>
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
 
-
-      <!-- START THE FEATURETTES -->
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/mascot1.jpg">
-        <h2 class="featurette-heading">Goals - <span class="muted">We are commited to providing the highest quality primary heatlh care.</span></h2>
-        <p class="lead">Provide accessible, timely primary care that is personalized, confidential and cost-effective.<br>
-        Educate students, emphasizing health promotion, healthy lifestyles, and lifelong disease prevention.<br>
-        Promote a campus community that provides a supportive environment for students to pursue personal wellness.<br>
-        Foster an environment to teach life-long learning skills to students to be active participants in their health and wellness.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/mascot2.jpg">
-        <h2 class="featurette-heading"> Maintaining Wellness - <span class="muted">Attending UCM is about more than just taking academic courses.</span></h2>
-        <p class="lead"><br>While your intellect is being broadened and developed, it is important that you nurture your physical and mental health to maintain balance and wellness.<br> Be physically active. Structure your time so that you have at least 30 minutes per day for recreational activity. <br> Eat well. Always have breakfast, and eat foods that are low in fat. Select five more servings of fruits and vegetables each day.<br> Reduce stress. Be sure to obtain seven to nine hours of sleep per night. Discuss your feelings with others, including family, friends and health professionals at Student Health, or at Psychological & Counseling Services where services are free and confidential. <br> Maintain high self esteem. Make intelligent choices and take responsibility for your health. <br> Don't smoke. Smokers have three times greater chance of dying from heart disease and 25 times greater chance of developing lung cancer. <br> Don't use drugs and avoid alcohol. The greatest risk to your life is related to the use of drugs or alcohol, which impede judgement and motor skills.
+        <p> 
+          <h4><b><u>Mission Statement:</u></b></h4>
+          The mission of UC Merced Counseling and Psychological Services (CAPS) is to support the mental health and well-being of our students.  It is the intention of all CAPS staff to provide a safe, confidential atmosphere of acceptance and accessibility to professionals in the field of psychology. Services specialize in the unique needs of UC Merced students in an effort to promote their academic, personal and social development. 
         </p>
-      </div>
-      <hr class="featurette-divider">
 
+        <p> 
+          <h4><b><u>Diversity Statement:</u></b></h4>
+          The University of California, Merced (UCM) is one of the most diverse college campuses in the United States with the highest percentage of first-generation college freshman amongst all of the UC campuses. UCM Counseling and Psychological Services (CAPS) focuses on meeting the unique needs of this population as well as striving to maintain an environment that is supportive and affirming of all cultural diversity statuses, including but not limited to:
+          <br><br>
+          • Ethnicity
+          <br>
+          • Race
+          <br>
+          • National Origin
+          <br>
+          • Age
+          <br>
+          • Socioeconomic Status
+          <br>
+          • Gender Identity and Expression
+          <br>
+          • Sexual Orientation
+          <br>
+          • First Language
+          <br>
+          • Ability Status
+          <br>
+          • Religion or Spiritual Beliefs/Affiliation
+          <br>
+          • Immigration Status
+          <br>
+          • Military Status
+          <br>
+          • Class
+          <br>
+          • First Generation (college student and/or American)
+          <br><br>
+          We acknowledge that the pursuit of multicultural awareness is a lifelong learning process. At CAPS, we believe part of that evolution involves increasing self-awareness by recognizing our own cultural limitations through our clients, community, colleagues and other educational resources. We welcome dialogue of varying perspectives as we continue to expand our knowledge base and understanding of the influences of diversity, marginalization and discrimination on the health and wellness of our students. Our aim is to integrate this learning process by celebrating differences, affirming diversity, and promoting equity and inclusion for all of our students. Our ultimate goal is to provide a safe, supportive, inclusive, and affirming environment for each and every UC Merced student. 
+
+
+        </p>
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+
+
+
+
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+
+
+                <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-2x"></i>
+                            Counselor's Corner
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+
+
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="../assets/snowflake.jpg" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i>December 4th, 2014</small>
+                                            <strong class="pull-right primary-font">Don’t Forget to Breathe</strong>
+                                        </div>
+                                        <p>
+                                        As we all know, the last few weeks of the semester can be very stressful.  You can find temporary relief and a brief sense of relaxation, however, by simply paying attention to something you do thousands of times each day without ever noticing it—breathing.  
+                                        <br><br>
+                                        All you need to do is momentarily shift your attention away from your thoughts and onto your breath as you take three mindful breaths.  This means that you breathe in deeply and slowly through the nose such that your chest raises.  Pause briefly, then exhale out of your mouth, making a soft “O” shape with your lips as you empty out your lungs and your chest falls.  Repeat this process two more times.  This can take perhaps 35-40 seconds to do, depending upon how deeply and slowly you inhale and exhale.    
+                                        <br><br>
+                                        You will find--if you pay close attention—that you feel a mild sense of calm and well-being afterward.  This is a simple but significant relaxation tool you have access to any time you need it.                
+
+                                        </p>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="../assets/ribbon-50.jpg" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font"></strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> October 10th, 2014
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Welcome to the new, updated website for Counseling and Psychological Services. We hope that you find useful information on our site to help you or someone you are concerned about get the mental health support needed.  We also have some new features in our Counseling Center, including the use of iPads to check in and a monitor with mental health wellness messaging. The Just In Case app is available on smartphones, so please upload it onto your phone where you will have it anytime you need it. This fall we are promoting the Each Mind Matters campaign, which is a California-wide initiative regarding mental health awareness and the importance of sharing our stories with others.  The campaign features a lime green ribbon and we invite you to get a ribbon from us and wear it to support the 1 in 4 Americans who have mental health concerns, as all of us are touched by this issue.  October is Mental Health Awareness month—a perfect time for you to join in. We will have all kinds of materials available around campus reminding you that “Each Mind Matters”!</a>
+                                        </p>
+                                    </div>
+                                </li>
+<!--commented out
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> July 28th, 2014</small>
+                                            <strong class="pull-right primary-font">Provider Monthly Message</strong>
+                                        </div>
+                                        <p>
+                                            Dr. Brinkop is a Staff Physician at the student health center. Dr. Brinkop would like to remind everyone that there is a campus blood
+                                            drive on July 14th 2015.
+                                        </p>
+                                    </div>
+                                </li>
+-->                       
+
+
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+
+
+
+
+                        <div class="panel-heading">
+                            <i class="fa fa-mobile-phone fa-3x"></i>
+                            Just in Case App
+                        </div>
+                        If you or someone else are in crisis, click below to learn more about the Just In Case app, available for downloading onto your smartphone.
+                        <div class="product-img ">
+                        <center>
+                        <a href="http://m.appcreatorpro.com/m/ucmerced/7c757c2f18/7c757c2f18.html" target="_blank"> <img class='img-responsive' img alt="justincase" border="0" src="../assets/justincase.jpg" title="justincase" /></a>
+                        </center>
+                        </div>
+
+
+
+                        <div class="panel-heading">
+                            <i class="fa fa-external-link fa-2x"></i>
+                            Each Mind Matters
+                        </div>
+                        Click below to learn more about Each Mind Matters, California’s initiative promoting awareness of mental health issues.
+                        <div class="product-img ">
+                        <center>
+                        <a href="http://www.eachmindmatters.org/">           
+                        <img class='img-responsive' sizes="(min-width: 40em) 100vw"
+                        srcset="../assets/mind-480.jpg 480w, ../assets/mind-1500.jpg 1000w" target="_blank"></a>
+                        </center>
+                        </div>
+         
+
+                    </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->      
 

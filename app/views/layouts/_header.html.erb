@@ -1,63 +1,121 @@
 <style>
 
-.navbar-inner {
-  background-color: #326496;
-  border-color: #2a537d;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#3f7dbc), to(#326496));
-  background-image: -webkit-linear-gradient(top, #3f7dbc, 0%, #326496, 100%);
-  background-image: -moz-linear-gradient(top, #3f7dbc 0%, #326496 100%);
-  background-image: linear-gradient(to bottom, #3f7dbc 0%, #326496 100%);
-  background-repeat: repeat-x;
-
- box-shadow: #ECC143;
- border-radius:0px;
- border:none;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3f7dbc', endColorstr='#ff326496', GradientType=0);
-
+.whitelink {
+  color: white;
 }
-
-.navbar-inner .nav > li > a {
-  color: #ECC143 !important;
-  text-shadow: none !important;
-}
-.navbar-inner .brand { color: #FFFFFF}
-
-ul.nav a:hover { color: #ff8500 !important; }
-
 </style>
+<script>
+$('.dropdown-toggle').dropdownHover();
+</script>
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" <%= link_to "UCM Counseling & Psychology", root_path %> </a>  
+            </div>
+            <!-- /.navbar-header -->
 
-
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">UC Merced Health Services</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-
-            <li><%= link_to "Home",    root_path %></li>
-            <li><%= link_to "Insurance", insurance_path %></li>
-            <li><%= link_to "About Us", about_path %></li>
-            <li><%= link_to "Parents", parents_path %></li>
-            <li><%= link_to "Contact", contact_path %></li>
+            <ul class="nav navbar-top-links navbar-right">
 
               <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Clinical Services <b class="caret"></b></a>
+                  <%= link_to about_path, :class => "whitelink" do %>
+                  About <i class="fa fa-caret-down"></i>
+                  <% end %> 
+
                   <ul class="dropdown-menu">
-                    <li><a href="#">Appointments</a></li>
-                    <li><a href="#">Primary Care</a></li>
-                    <li><a href="#">HIV Testing</a></li>
-                    <li><a href="#">Immunizations</a></li>
-                    <li><a href="#">Men's Health</a></li>
-                    <li><a href="#">Women's Health</a></li>
-                    </ul>
+                    <li>
+                            <%= link_to root_path do %>
+                            <i class="fa fa-home fa-fw"></i>  Home
+                            <% end %>
+                    <li>
+                            <%= link_to meetthestaff_path do %>
+                            <i class="fa fa-users fa-fw"></i> Meet The Staff
+                            <% end %>
+                    </li>
+                    <li>
+                            <%= link_to confidentiality_path do %>
+                            Confidentiality
+                            <% end %>
+                    </li>
+                  </ul>
+              </li>
+
+<!--    http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
+<li class="dropdown">  
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false">
+        Account <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a tabindex="-1" href="#">My Account</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Change Email</a></li>
+        <li><a tabindex="-1" href="#">Change Password</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Logout</a></li>
+    </ul>
+</li>  
+-->
+
+              <li>
+                  <%= link_to services_path, :class => "whitelink" do %>
+                  Services 
+                  <% end %> 
                 </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                     Resources <i class="fa fa-caret-down"></i>
+                    </a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Local Community", localcommunity_path %></li>
+                    <li><%= link_to "National", national_path %></li>
+                    <li><%= link_to "Mental Health Awareness Days", mhdays_path %></li>
+                  <!-- commented out  <li><%= link_to "Minor Consent", minorconsent_path %></li>   -->
+                  </ul>
+              </li>
+
+
+
+              <li>
+                  <%= link_to faq_path, :class => "whitelink" do %>
+                  FAQ 
+                  <% end %> 
+                </li>
+
+ 
+
+               <li>
+                  <%= link_to contact_path, :class => "whitelink" do %>
+                  <i class="fa fa-envelope fa-fw"></i>  Contact 
+                  <% end %> 
+                </li>
+
+
+        
+
+
+
+            <li class ="dropdown">
+                  <div id="google_translate_element"></div>
+            </li>
+
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+
+
+
+
+
+
+
+
+
+
